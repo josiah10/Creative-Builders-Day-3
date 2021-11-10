@@ -1,0 +1,70 @@
+body{
+    background-image: url("pexels-max-vakhtbovych-5998120.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    height:100vh ;
+    align-items: center;
+    flex-direction: column;
+}
+.main-content{
+   text-align: center;
+    padding: 20px 50px;
+    border-radius: 7px;
+    border: 1px white;
+    background-color: white;
+}
+.main-content h3{
+    margin-top: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+
+}
+.main-content button{
+   margin-bottom: 10px;
+    border: 1px solid dodgerblue;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+.modal{
+   position: fixed;
+    top: 38%;
+    width: 50%;
+    z-index: 1;
+    left: 20%;
+    background-color: #aaaaaa;
+    padding: 30px;
+    display: none;
+    border-radius: 7px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+.modal span{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    color: black;
+    font-weight: bolder;
+}
+.modal span:hover,.modal span:focus{
+    font-size: 30px;
+    color: red;
+}
+.modal p{
+    margin-top: 30px;
+}
+@keyframes modalopen {
+    from{opacity:0}
+    to{opacity: 1}
+}
+
+
